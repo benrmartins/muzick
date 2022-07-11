@@ -15,8 +15,8 @@ import java.util.List;
 
 @CrossOrigin
 @RestController
-@RequestMapping
-public class NotesController {
+@RequestMapping("/api/notes")
+public class NoteController {
 
     @Autowired
     private NoteRepository noteRepository;
@@ -63,5 +63,4 @@ public class NotesController {
 
         return new ResponseEntity<>(notes, HttpStatus.OK);
     }
-
-    }
+}
